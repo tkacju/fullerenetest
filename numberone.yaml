@@ -47,15 +47,15 @@ use_sc: true                                                                    
 # key_mapping is used to map the key in the npz file to the NequIP default values (see data/_key.py)
 # all arrays are expected to have the shape of (nframe, natom, ?) except the fixed fields
 # note that if your data set uses pbc, you need to also pass an array that maps to the nequip "pbc" key
-dataset: npz                                                                       # type of data set, can be npz or ase
-dataset_url: http://quantum-machine.org/gdml/data/npz/toluene_ccsd_t.zip           # url to download the npz. optional
-dataset_file_name: ./benchmark_data/toluene_ccsd_t-train.npz                       # path to data set file
+dataset: exyz                                                                       # type of data set, can be npz or ase
+dataset_url:                                                                        # url to download the npz. optional
+dataset_file_name: ./c60-1421.exyz                                                  # path to data set file
 key_mapping:
   z: atomic_numbers                                                                # atomic species, integers
   E: total_energy                                                                  # total potential eneriges to train to
   F: forces                                                                        # atomic forces to train to
   R: pos                                                                           # raw atomic positions
-npz_fixed_field_keys:                                                              # fields that are repeated across different examples
+exyz_fixed_field_keys:                                                              # fields that are repeated across different examples
   - atomic_numbers
 
 # A list of atomic types to be found in the data. The NequIP types will be named with the chemical symbols, and inputs with the correct atomic numbers will be mapped to the corresponding types.
