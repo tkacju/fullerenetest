@@ -49,7 +49,7 @@ use_sc: true                                                                    
 # note that if your data set uses pbc, you need to also pass an array that maps to the nequip "pbc" key
 dataset: exyz                                                                       # type of data set, can be npz or ase
 dataset_url:                                                                        # url to download the npz. optional
-dataset_file_name: tkacju@tarkil.grid.cesnet.cz/fullereny_test/c60-1421.exyz                                                  # path to data set file
+dataset_file_name: ./fullereny_test/all_together                                                  # path to data set file
 key_mapping:
   z: atomic_numbers                                                                # atomic species, integers
   E: total_energy                                                                  # total potential eneriges to train to
