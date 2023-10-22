@@ -49,17 +49,12 @@ use_sc: true                                                                    
 # note that if your data set uses pbc, you need to also pass an array that maps to the nequip "pbc" key
 dataset: ase                          # type of data set, can be npz or ase
 ase_args:
-format: exyz
-dataset_url:                                                                        # url to download the npz. optional
+        format: extxyz                                                                       # url to download the npz. optional
 dataset_file_name: ./all_together                                                  # path to data set file
-include_keys:
-  - user_label
-key_mapping:
-  user_label: label0
-chemical_symbol_to_type:
-  H: 0
-  C: 1
-  N: 2
+chemical_symbols:
+  - H
+  - C
+  - N
 
 # logging
 wandb: true                                                                        # we recommend using wandb for logging
