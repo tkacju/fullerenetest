@@ -5,7 +5,7 @@
 # process contains processed data sets
 # if 'root'/'run_name' exists, 'root'/'run_name'_'year'-'month'-'day'-'hour'-'min'-'s' will be used instead.
 root: results/fullerene
-run_name: example-run-fullerene3
+run_name: example-run-fullerene4
 seed: 123                                                                         # model seed
 dataset_seed: 456                                                                 # data set seed
 append: true                                                                      # set true if a restarted run should append to the previous log file
@@ -58,7 +58,7 @@ chemical_symbols:
 
 # logging
 wandb: true                                                                        # we recommend using wandb for logging
-wandb_project: fullerene-example3                                                     # project name used in wandb
+wandb_project: fullerene-example4                                                     # project name used in wandb
 
 verbose: info                                                                      # the same as python logging, e.g. warning, info, debug, error; case insensitive
 log_batch_freq: 10                                                                 # batch frequency, how often to print training errors withinin the same epoch
