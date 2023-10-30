@@ -50,7 +50,7 @@ use_sc: true                                                                    
 dataset: ase                          # type of data set, can be npz or ase
 ase_args:
         format: extxyz                                                                       # url to download the npz. optional
-dataset_file_name: ./all_exyz                                                  # path to data set file
+dataset_file_name: ./all.exyz                                                  # path to data set file
 chemical_symbols:
   - H
   - C
